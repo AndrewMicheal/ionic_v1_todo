@@ -1,0 +1,49 @@
+<section class="home">
+
+  <ion-pane>
+  <ion-header-bar class="bar-stable">
+    <div class="bar bar-header bar-calm">
+      <div class="navParent">
+        <div>
+          <span>Welcome {{firstName + " " + lastName}}</span>
+        </div>
+        <div class="list">
+          <a class="mr link" ng-click = "siginOut()">Signout</a>
+        </div>
+      </div>
+    </div>
+  </ion-header-bar>
+  <ion-content class="home">
+
+    <ion-list ng-repeat = "todo in todos">
+      <div class="mt-2">
+        <div class="todoItem">
+          <div class="todoFlex">
+            <div class="todoTitle">
+              <ion-checkbox ng-model = "checkbox.todo.title" ng-change = "isChecked(checkbox.todo.title , todo._id)" class="border-none"></ion-checkbox>
+              <span class="ml">{{todo.title}}</span>
+            </div>
+            <div class="todoBtns">
+              <button class="button-icon ion-android-delete colorDanger" ng-click = "showConfirm(todo._id)"></button>
+            </div>
+          </div>
+          <p class="todoDesc">{{todo.desc}}</p>
+        </div>
+      </div>
+
+    </ion-list>
+
+  </ion-content>
+</ion-pane>
+
+
+  <div class="addBtnClass">
+    <div class="parent">
+      <button class="button button-icon ion-android-add addIcon" ng-click="modal.show()"></button>
+    </div>
+  </div>
+
+
+
+</section>
+

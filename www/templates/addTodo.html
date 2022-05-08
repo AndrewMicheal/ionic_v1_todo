@@ -1,0 +1,23 @@
+<ion-modal-view>
+  <ion-header-bar class="bar bar-header bar-positive">
+    <h1 class="title">Add Todo</h1>
+    <button class="button button-clear button-primary" ng-click="modal.hide()">Cancel</button>
+  </ion-header-bar>
+  <ion-content class="padding">
+    <form name="$parent.form" ng-submit = "addTodo(todoForm)">
+     <div class="mt-2">
+      <label class="item item-input">
+        <span class="input-label">Title</span>
+        <input ng-model="todoForm.title" type="text">
+      </label>
+     </div>
+     <div class="mt-2">
+      <label class="item item-input">
+        <span class="input-label">Description</span>
+        <input ng-model="todoForm.desc" type="text">
+      </label>
+     </div>
+     <button type = "submit" class="button button-full button-calm">Add</button>
+    </form>
+  </ion-content>
+</ion-modal-view>

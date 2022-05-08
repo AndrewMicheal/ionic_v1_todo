@@ -1,0 +1,31 @@
+<section>
+  <div class="bar bar-header bar-calm">
+    <div class="navParent">
+      <div>
+        <span>Todo App</span>
+      </div>
+      <div class="list">
+        <a class="mr link" href="#/register">Register</a>
+        <a class="link" href="#/sigin">Sign in</a>
+      </div>
+    </div>
+  </div>
+  <div class="list mt-5">
+    <form name= "siginForm" ng-submit = "sigin(user)">
+       <div>
+        <label class="item item-input">
+          <input type="text" ng-model = "user.email" ng-change = "getUser('email',user)" placeholder="Email">
+        </label>
+        <div>
+          <span class="text-center alert alert-danger d-block" ng-if = 'emailErr != ""'>{{emailErr}}</span>
+        </div>
+       </div>
+       <div>
+        <label class="item item-input">
+          <input type="password" ng-change = "getUser('password',user)" ng-model = "user.password" placeholder="Password">
+        </label>
+       </div>
+       <button type = "submit" ng-disabled = dsblBtn class="button button-full button-calm">Sigin</button>
+    </form>
+  </div>
+</section>

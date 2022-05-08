@@ -1,0 +1,135 @@
+/* Empty. Add your own CSS if you like */
+.myApp {
+  background-color: #e0e4f3 !important;
+}
+.myNavbar {
+  background-color: #01bcef !important;
+}
+.pane {
+  background-color: #677ac7 !important;
+  overflow: visible!important;
+}
+.alert
+{
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.alert-danger
+  {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    width: 100%;
+    display: block;
+  }
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.navParent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.link {
+  text-decoration: none;
+  color: #fff;
+}
+.mr {
+  margin-right: 20px;
+}
+.navbar-brand,
+.nav-link {
+  color: #fff !important;
+}
+
+.addBtnClass {
+  width: 70px;
+  height: 70px;
+  background-color: #01bcef;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  color: #fff;
+  position: fixed;
+  right: 51px;
+  bottom: 33px;
+  z-index: 999;
+}
+
+
+.parent {
+  position: relative!important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  -webkit-transform: translate(-50% , -50%);
+  -moz-transform: translate(-50% , -50%);
+  -ms-transform: translate(-50% , -50%);
+  -o-transform: translate(-50% , -50%);
+  text-align: center;
+}
+
+.ionAdd {
+  font-size: 30px!important;
+}
+
+.pt-5 {
+  padding-top: 5rem;
+}
+
+.checkbox-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.addIcon {
+  font-size: 25px!important;
+  color: #fff;
+}
+
+.colorSuccess {
+  color: greenyellow;
+  font-size: 20px;
+  cursor: pointer!important;
+}
+
+.colorDanger {
+  cursor: pointer!important;
+  color: red;
+  font-size: 20px;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.todoItem {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.todoFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todoTitle {
+  display: flex;
+  align-items: center;
+}
+
+.border-none {
+  padding-left: 35px;
+  border: none;
+}
+
+.todoDesc {
+  margin: 0px 47px 10px;
+}
